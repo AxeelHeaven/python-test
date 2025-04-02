@@ -1,9 +1,18 @@
-class Car:
-    
+class Restaurant:
 
-    def acelerar(self):
-        print("El coche va a 20m/s")
+    def add(self, nombre):
+        self.nombre = nombre # Atributo
+
+    def mostrar(self):
+        print(f"Nombre: {self.nombre}")
 
 
-carro1 = Car()
-carro1.acelerar()
+
+tacos = Restaurant()
+tacos.add("Tacos Julio")
+tacos.mostrar()
+
+
+birria = Restaurant()
+birria.add("Birria Sabrosito")
+print(f"La mejor birria es {birria.nombre}")
